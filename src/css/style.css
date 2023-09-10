@@ -101,7 +101,7 @@ a {
 #login_options {
     display: flex;
     justify-content: space-between;
-    padding: 1vw;
+    padding: 0.5vw;
 }
 
 #forgot_password {
