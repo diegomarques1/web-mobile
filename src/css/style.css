@@ -33,8 +33,40 @@ a {
     color: var(--borderColor);
 }
 
+#initial_logo img {
+    filter: invert(1);
+}
+
+#login {
+    color: var(--borderColor);
+    font-weight: medium;
+}
+
 #login h1 {
     font-weight: bold;
+}
+
+#login input {
+    border: 1px solid var(--borderColor);
+}
+
+#login input:focus {
+    outline: none;
+}
+
+#login button {
+    font-weight: bold;
+    border: 1px solid var(--borderColor);
+}
+
+#forgot_password {
+    color: #C1BABA;
+}
+
+#no_login {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 /* Mobile */
@@ -52,16 +84,13 @@ a {
 }
 
 #initial_logo img {
-    filter: invert(1);
     height: 6vh;
     padding-bottom: 1vh;
 }
 
 #login {
-    color: var(--borderColor);
     padding: 3%;
     font-size: 12px;
-    font-weight: medium;
 }
 
 #login h1 {
@@ -80,18 +109,11 @@ a {
 
 #login input {
     padding-left: 5px;
-    border: 1px solid var(--borderColor);
     border-radius: 3px;
     height: 3.5vh;
 }
 
-#login input:focus {
-    outline: none;
-}
-
 #login button {
-    font-weight: bold;
-    border: 1px solid var(--borderColor);
     border-radius: 3px;
     height: 5vh;
     display: flex;
@@ -106,13 +128,8 @@ a {
     padding: 0.5vw;
 }
 
-#forgot_password {
-    color: #C1BABA;
-}
-
 #no_login {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 3px;
     padding-top: 10vh;
 }
+
+/* Outros dispositivos */
