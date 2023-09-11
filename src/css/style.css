@@ -33,6 +33,10 @@ a {
     color: var(--borderColor);
 }
 
+#login h1 {
+    font-weight: bold;
+}
+
 /* Mobile */
 #initial_logo {
     padding: 1vh;
@@ -40,7 +44,6 @@ a {
     border: 1px solid var(--borderColor);
     border-radius: 15px;
     font-size: 24px;
-    font-weight: bold;
     color: var(--borderColor);
     display: flex;
     flex-direction: column;
@@ -64,7 +67,6 @@ a {
 #login h1 {
     padding-bottom: 0.5vh;
     font-size: 24px;
-    font-weight: bold;
 }
 
 #login form {
@@ -112,5 +114,5 @@ a {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 3px;
-    padding-top: 8vh;
+    padding-top: 10vh;
 }
