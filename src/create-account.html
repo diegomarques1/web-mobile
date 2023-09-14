@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma aplicação para viabilizar caronas entre membros da comunidade do Mackenzie">
+    <title>Criar conta - MackCarona</title>
+    <link rel="stylesheet" type="text/css" href="css/create-account.css">
+</head>
+<body>
+    <div id="initial_logo">
+        <img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/>
+        <strong>Mack Carona</strong>
+    </div>
+    <section id="create_acc">
+        <h1>Crie sua conta</h1>
+        <!-- <form action="home.html"> -->
+        <form action="button">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome completo..." required>
+            <br>
+            <label for="tia">TIA</label>
+            <input type="number" id="tia" name="tia" placeholder="Digite seu TIA..." maxlength="8" required>
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required>
+            <br>
+            <label for="cellphone">Celular</label>
+            <input type="number" id="cellphone" name="cellphone" placeholder="Digite seu número com DDD..." maxlength="15" required>
+            <br>
+            <label for="birthdate">Data de nascimento</label>
+            <input type="date" id="birthdate" name="birthdate" placeholder="Digite seu número com DDD..." required>
+            <br>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha..." required>
+            <br>
+            <label for="password">Confirmar senha</label>
+            <input type="password" id="password_confirm" name="password_confirm" placeholder="Digite novamente sua senha..." required>
+            <br>
+            <button type="submit">Criar conta</button>
+        </form>
+    </section>
+</body>
+</html>

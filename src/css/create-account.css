@@ -28,54 +28,39 @@ body {
     background-color: var(--backgroundColor);
 }
 
-a {
-    text-decoration: none;
-    color: var(--borderColor);
-}
-
 #initial_logo img {
     filter: invert(1);
 }
 
-#login {
+#create_acc {
     color: var(--borderColor);
     font-weight: medium;
 }
 
-#login h1 {
+#create_acc h1 {
     font-weight: bold;
 }
 
-#login input {
+#create_acc input {
     border: 1px solid var(--borderColor);
 }
 
-#login input:focus {
+#create_acc input:focus {
     outline: none;
 }
 
-#login button {
+#create_acc button {
     font-weight: bold;
     border: 1px solid var(--borderColor);
-}
-
-#forgot_password {
-    color: #C1BABA;
-}
-
-#no_login {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
 }
 
 /* Mobile */
 #initial_logo {
-    padding: 1vh;
-    margin: 25% 20%;
+    padding: 0.5vh;
+    margin: 5% 27%;
     border: 1px solid var(--borderColor);
     border-radius: 15px;
-    font-size: 24px;
+    font-size: 1.2em;
     color: var(--borderColor);
     display: flex;
     flex-direction: column;
@@ -84,53 +69,42 @@ a {
 }
 
 #initial_logo img {
-    height: 6vh;
+    height: 4vh;
     padding-bottom: 1vh;
 }
 
-#login {
+#create_acc {
     padding: 3%;
     font-size: 12px;
 }
 
-#login h1 {
-    padding-bottom: 0.5vh;
+#create_acc h1 {
+    padding-bottom: 1vh;
     font-size: 24px;
 }
 
-#login form {
+#create_acc form {
     display: flex;
     flex-direction: column;
 }
 
-#login label {
-    padding-top: 1vh;
+#create_acc label {
     padding-bottom: 0.2vh;
 }
 
-#login input {
+#create_acc input {
     padding-left: 0.5rem;
     border-radius: 3px;
     height: 3.5vh;
 }
 
-#login button {
+#create_acc button {
     border-radius: 3px;
     height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.5vh;
-}
-
-#login_options {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5vw;
-}
-
-#no_login {
-    padding-top: 10vh;
+    margin-top: 2vh;
 }
 
 /* Outros dispositivos */
