@@ -72,7 +72,7 @@ body {
 /* Mobile */
 #initial_logo {
     padding: 0.5vh;
-    margin: 5% 27%;
+    margin: 5% 27% 3% 27%;
     border: 1px solid var(--borderColor);
     border-radius: 15px;
     font-size: 1.2em;
