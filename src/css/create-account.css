@@ -19,6 +19,11 @@ section h1 {
     padding: 0;
 }
 
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
 /* Formatação básica */
 * {
     font-family: 'Inter', sans-serif;
@@ -41,15 +46,25 @@ body {
     font-weight: bold;
 }
 
-#create_acc input {
+#personal_data {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#personal_data input {
     border: 1px solid var(--borderColor);
 }
 
-#create_acc input:focus {
+#personal_data input:focus {
     outline: none;
 }
 
-#create_acc button {
+#personal_data legend {
+    display: none;
+}
+
+#button {
     font-weight: bold;
     border: 1px solid var(--borderColor);
 }
@@ -70,7 +85,7 @@ body {
 
 #initial_logo img {
     height: 4vh;
-    padding-bottom: 1vh;
+    padding-bottom: 0.5vh;
 }
 
 #create_acc {
@@ -88,17 +103,21 @@ body {
     flex-direction: column;
 }
 
-#create_acc label {
+#personal_data {
+    padding: 0;
+}
+
+#personal_data label {
     padding-bottom: 0.2vh;
 }
 
-#create_acc input {
+#personal_data input {
     padding-left: 0.5rem;
     border-radius: 3px;
     height: 3.5vh;
 }
 
-#create_acc button {
+#button {
     border-radius: 3px;
     height: 5vh;
     display: flex;
