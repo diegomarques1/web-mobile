@@ -19,20 +19,75 @@ section h1 {
 }
 
 /* Formatação básica */
-
-
-/* Mobile */
 * {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#search_bar {
+    border: 2px solid #C5C5C5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search_bar input {
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    width: 100%;
+}
+
+#options {
+    width: 100%;
+    display: flex;
+}
+
+.ride {
+    font-weight: 700;
+    border: 3px solid var(--redTone);
+    border-radius: 1em;
+    text-align: center;
+}
+
+.request {
+    color: white;
+    background-color: var(--redTone);
+}
+
+.offer {
+    background-color: transparent;
+}
+
+footer {
+    border-top: 1.5px solid #C5C5C5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p, footer a {
+    font-weight: 400;
+}
+
+/* Mobile */
 header {
     padding: 5% 8% 0% 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1.5px solid #C5C5C5;
+}
+
+header strong {
+    font-size: 1.5em;
 }
 
 header img {
@@ -45,13 +100,7 @@ header a img {
     padding-bottom: 0.1vh;
 }
 
-header strong {
-    font-size: 1.5em;
-}
-
 section {
-    display: flex;
-    flex-direction: column;
     margin-left: 0.8em;
     margin-right: 0.8em;
     min-height: 80vh;
@@ -67,20 +116,11 @@ section h1 {
     height: 4vh;
     width: 96%;
     padding: 0.3em;
-    border: 2px solid #C5C5C5;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #search_bar input {
-    border: none;
-    background: transparent;
     font-size: 0.7em;
     padding-left: 1em;
-    font-weight: 500;
-    width: 100%;
 }
 
 #search_bar img {
@@ -92,56 +132,34 @@ section h1 {
     margin-top: 2em;
     margin-bottom: 1.5em;
     gap: 1.2em;
-    width: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .ride {
-    font-weight: 700;
     font-size: 1.1em;
-    border: 3px solid var(--redTone);
-    border-radius: 1em;
     height: 7vh;
     padding-right: 1.2em;
     padding-left: 1.2em;
-    text-align: center;
-}
-
-.request {
-    color: white;
-    background-color: var(--redTone);
-}
-
-.offer {
-    background-color: transparent;
 }
 
 #svg {
-    height: 43vh;
-    display: flex;
+    margin-top: 4em;
 }
 
 footer {
-    border-top: 1.5px solid #C5C5C5;
     padding-bottom: 1em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-footer p, footer a {
-    font-weight: 400;
-}
-
-#menu {
+#menu, #head_icons, nav {
     display: none;
 }
 
 #menu:target { 
-    display: block; 
+    position: absolute;
+    display: flex;
+    width: 50%;
+    background-color: gray;
 }
 
 /* Outros dispositivos */
