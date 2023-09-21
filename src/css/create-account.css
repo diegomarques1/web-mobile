@@ -75,12 +75,16 @@ body {
     margin: 5% 27% 3% 27%;
     border: 1px solid var(--borderColor);
     border-radius: 15px;
-    font-size: 1.2em;
+}
+
+#initial_logo a {
+    text-decoration: none;
     color: var(--borderColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.2em;
 }
 
 #initial_logo img {
