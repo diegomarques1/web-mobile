@@ -125,6 +125,13 @@ section h1 {
 #search_bar input {
     font-size: 0.7em;
     padding-left: 1em;
+    outline: none;
+}
+
+#search_bar button {
+    background-color: transparent;
+    border: none;
+    width: 2.5em;
 }
 
 #search_bar img {
