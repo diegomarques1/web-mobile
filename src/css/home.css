@@ -18,6 +18,10 @@ section h1 {
     padding: 0;
 }
 
+nav ul {
+    margin: 0;
+}
+
 /* Formatação básica */
 * {
     font-family: 'Inter', sans-serif;
@@ -151,15 +155,102 @@ footer {
     padding-bottom: 1em;
 }
 
-#menu, #head_icons, nav {
+#menu {
     display: none;
+    position: absolute;
+    height: 100vh;
+    width: 0px;
+    top: 0;
+    border: 1px solid rgba(0, 0, 0, 0.188);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #menu:target { 
-    position: absolute;
     display: flex;
-    width: 50%;
-    background-color: gray;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+}
+
+#menu img {
+    height: 22px;
+    padding-bottom: 0.5vh;
+}
+
+#head_icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#head_icons img {
+    height: 5vh;
+    padding-bottom: 0.5vh;
+}
+
+#head_icons a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding-top: 0.2em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    /* gap: 0.5em; */
+    padding-bottom: 0.5em;
+}
+
+#image_01 {
+    margin-left: 1.6em;
+    margin-right: 0.5em;
+}
+
+#image_02 {
+    margin-left: 1.5em;
+    margin-right: 0.3em;
+}
+
+#image_03 {
+    margin-left: 1.8em;
+    margin-right: 0.5em;
+}
+
+#image_04 {
+    margin-left: 1.7em;
+    margin-right: 0.35em;
+}
+
+#image_05 {
+    margin-left: 1.9em;
+    margin-right: 0.5em;
+}
+
+#image_06 {
+    margin-left: 1.7em;
+    margin-right: 0.4em;
+}
+
+#image_07 {
+    margin-left: 1.9em;
+    margin-right: 0.3em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0.27em;
 }
 
 /* Outros dispositivos */
