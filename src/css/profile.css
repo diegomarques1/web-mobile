@@ -13,7 +13,7 @@ html, body {
     padding: 0;
 }
 
-section h1 {
+section h1, p {
     margin: 0;
     padding: 0;
 }
@@ -28,41 +28,62 @@ nav ul {
     font-weight: 500;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 section {
     display: flex;
     flex-direction: column;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
-.ride {
-    font-weight: 700;
-    border: 3px solid var(--redTone);
-    border-radius: 1em;
+section h1 {
     text-align: center;
+    padding-bottom: 0.5em;
 }
 
-.request {
-    color: white;
-    background-color: var(--redTone);
-}
-
-.offer {
-    background-color: transparent;
-}
-
-a {
-    text-decoration: none;
+section h2 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
 }
 
 #profile a {
-    font-weight: 700;
+    text-decoration: none;
     background-color: var(--redTone);
     color: white;
-    border-radius: 1em;
+    align-self: center;
     text-align: center;
+    width: 30vw;
+    padding: 1.2em;
+    border-radius: 0.3em;
+    font-size: 0.8em;
+    margin-bottom: 7em;
+}
+
+#profile a:hover {
+    cursor: pointer;
+}
+
+#info {
+    margin-bottom: 1.5em;
+}
+
+#info ul {
+    padding: 0;
+}
+
+#info ul li {
+    list-style-type: none;
+    display: flex;
+    padding-bottom: 0.1em;
+}
+
+#info strong p {
+    font-weight: 700;
+    margin-bottom: 0.3em;
 }
 
 footer {
@@ -88,6 +109,7 @@ header {
 
 header strong {
     font-size: 1.5em;
+    font-weight: 700;
 }
 
 header img {
@@ -112,23 +134,12 @@ section h1, h2 {
     font-weight: 700;
 }
 
-#options {
-    margin-top: 2em;
-    margin-bottom: 1.5em;
-    gap: 1.2em;
-    flex-direction: column;
-    align-items: center;
+section img {
+    height: 20vh;
 }
 
-.ride {
-    font-size: 1.1em;
-    height: 7vh;
-    padding-right: 1.2em;
-    padding-left: 1.2em;
-}
-
-#svg {
-    margin-top: 4em;
+section ul {
+    margin: 0;
 }
 
 footer {
@@ -177,10 +188,15 @@ footer {
     padding-top: 0.2em;
 }
 
+nav {
+    height: 100%;
+}
+
 nav ul {
     display: flex;
     flex-direction: column;
     padding-left: 0;
+    height: 100%;
 }
 
 nav ul li {
@@ -225,7 +241,13 @@ li:nth-child(7) img {
     margin-right: 0.3em;
 }
 
+li:last-of-type {
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+
 nav ul li a {
+    text-decoration: none;
     color: black;
     font-weight: 400;
     margin-bottom: 0.27em;
