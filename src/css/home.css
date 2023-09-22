@@ -207,10 +207,15 @@ footer {
     padding-top: 0.2em;
 }
 
+nav {
+    height: 100%;
+}
+
 nav ul {
     display: flex;
     flex-direction: column;
     padding-left: 0;
+    height: 100%;
 }
 
 nav ul li {
@@ -255,7 +260,12 @@ li:nth-child(7) img {
     margin-right: 0.3em;
 }
 
-nav ul li a {
+li:last-of-type {
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+
+nav ul li a, #logout a {
     text-decoration: none;
     color: black;
     font-weight: 400;
