@@ -35,17 +35,17 @@
     padding: 1em;
 }
 
-#head_icons img {
-    height: 5vh;
-    padding-bottom: 0.5vh;
-}
-
 #head_icons a {
     font-size: 1.5em;
     text-decoration: none;
     color: black;
     font-weight: 500;
     padding-top: 0.2em;
+}
+
+#head_icons a img {
+    height: 5vh;
+    padding-bottom: 0.5vh;
 }
 
 nav {
