@@ -1,0 +1,114 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Menu - Mobile */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 0px;
+    top: 0;
+    border: 1px solid rgba(0, 0, 0, 0.188);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#menu:target { 
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+}
+
+#menu img {
+    height: 22px;
+    padding-bottom: 0.5vh;
+}
+
+#head_icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#head_icons img {
+    height: 5vh;
+    padding-bottom: 0.5vh;
+}
+
+#head_icons a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding-top: 0.2em;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    height: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5em;
+}
+
+li:nth-child(1) img {
+    margin-left: 1.6em;
+    margin-right: 0.5em;
+}
+
+li:nth-child(2) img {
+    margin-left: 1.5em;
+    margin-right: 0.3em;
+}
+
+li:nth-child(3) img {
+    margin-left: 1.8em;
+    margin-right: 0.5em;
+}
+
+li:nth-child(4) img {
+    margin-left: 1.7em;
+    margin-right: 0.35em;
+}
+
+li:nth-child(5) img {
+    margin-left: 1.9em;
+    margin-right: 0.5em;
+}
+
+li:nth-child(6) img {
+    margin-left: 1.7em;
+    margin-right: 0.4em;
+}
+
+li:nth-child(7) img {
+    margin-left: 1.9em;
+    margin-right: 0.3em;
+}
+
+li:last-of-type {
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0.27em;
+}
