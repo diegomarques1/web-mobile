@@ -111,11 +111,6 @@ header {
     align-items: center;
 }
 
-header strong {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
 #left_side img {
     height: 3vh;
     padding-bottom: 0.1vh;
@@ -143,7 +138,7 @@ section img {
 }
 
 footer {
-    padding-bottom: 3.5em;
+    height: 11vh;
 }
 
 /* Outros dispositivos */
