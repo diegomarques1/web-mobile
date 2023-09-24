@@ -233,10 +233,16 @@ footer {
     justify-content: space-between;
     gap: 3em;
     margin-bottom: 3em;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 #success img:first-child {
     height: 15vh;
+}
+
+#sucess h1 {
+    text-align: center;
 }
 
 .home {
