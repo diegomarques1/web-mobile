@@ -51,6 +51,7 @@ h2 {
     margin-bottom: 1em;
 }
 
+/* Menu adaptado */
 header {
     padding: 5% 8% 0% 8%;
     display: flex;
@@ -68,6 +69,7 @@ header {
     padding-bottom: 1vh;
 }
 
+/* Solicitações pendentes */
 #near_rides, #description {
     display: flex;
     flex-direction: column;
@@ -102,6 +104,7 @@ header {
     color: black;
 }
 
+/* Botões da página inicial - offer-ride.html */
 #options {
     width: 100%;
     display: flex;
@@ -122,6 +125,8 @@ button:hover {
     gap: 0.5em;
 }
 
+
+/* Configurações dos botões */
 .button_options {
     font-size: 1.1em;
     height: 7vh;
@@ -131,7 +136,7 @@ button:hover {
     border-radius: 1em;
 }
 
-.signal, .button_continue, .confirm_offer {
+button, .confirm_offer {
     font-weight: bold;
     color: var(--whiteTone);
     background-color: var(--redTone);
@@ -140,12 +145,13 @@ button:hover {
 
 .more_options {
     background-color: var(--whiteTone);
+    color: black;
     border: 3px solid var(--redTone);
     padding-right: 2em;
     padding-left: 2em;
 }
 
-.button_continue, .signal {
+.button_continue, .signal, .home {
     padding-right: 4em;
     padding-left: 4em;
 }
@@ -155,6 +161,7 @@ button:hover {
     padding-left: 3em;
 }
 
+/* Estilização da imagem do mapa */
 #location {
     display: flex;
     justify-content: center;
@@ -167,7 +174,7 @@ button:hover {
     height: 60%;
 }
 
-
+/* Estilização do formulário de confirmação */
 #offer_ride {
     margin: 0% 8% 0% 8%;
 }
@@ -216,3 +223,26 @@ footer {
     border-top: 1px solid var(--borderColor);
     text-align: center;
 }
+
+/* Estilização da página de sucesso */
+#success {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    margin-bottom: 3em;
+}
+
+#success img:first-child {
+    height: 15vh;
+}
+
+.home {
+    margin-top: 1em;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+/* Outros dispositivos */
