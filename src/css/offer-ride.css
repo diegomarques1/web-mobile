@@ -131,7 +131,7 @@ button:hover {
     border-radius: 1em;
 }
 
-.signal, .button_continue, .confirm_request {
+.signal, .button_continue, .confirm_offer {
     font-weight: bold;
     color: var(--whiteTone);
     background-color: var(--redTone);
@@ -150,7 +150,7 @@ button:hover {
     padding-left: 4em;
 }
 
-.confirm_request {
+.confirm_offer {
     padding-right: 3em;
     padding-left: 3em;
 }
@@ -168,11 +168,11 @@ button:hover {
 }
 
 
-#request_cont {
+#offer_ride {
     margin: 0% 8% 0% 8%;
 }
 
-#request_ride {
+#offer_form {
     display: flex;
     flex-direction: column;
     font-size: 16px;
