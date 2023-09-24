@@ -6,6 +6,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+nav ul {
+    margin: 0;
+}
+
 #menu {
     display: none;
     position: absolute;
