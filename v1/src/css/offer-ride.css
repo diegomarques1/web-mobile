@@ -65,7 +65,7 @@ h2 {
 
 /* Header para navegação adaptado */
 header {
-    padding: 5% 8% 0% 8%;
+    padding: 5% 8% 5% 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
