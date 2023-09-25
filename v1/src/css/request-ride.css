@@ -35,14 +35,14 @@ main {
     flex-direction: column;
 }
 
-#main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: space-between;
     justify-content: space-between;
 }
 
-#no_footer {
+.no_footer {
     min-height: 90vh;
 }
 

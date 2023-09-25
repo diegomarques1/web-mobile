@@ -22,14 +22,14 @@ h1, h2 {
     font-weight: 700;
 }
 
-#main {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
 
-#no_footer {
+.no_footer {
     min-height: 90vh;
 }
 

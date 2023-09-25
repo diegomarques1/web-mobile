@@ -28,7 +28,7 @@ fieldset {
     font-weight: 500;
 }
 
-#main {
+.main {
     display: flex;
     flex-direction: column;
     height: 100%;
