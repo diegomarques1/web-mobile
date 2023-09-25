@@ -125,7 +125,7 @@ header {
 }
 
 /* Botões em geral */
-button:hover {
+button:hover, a:hover, #options input {
     cursor: pointer;
 }
 
