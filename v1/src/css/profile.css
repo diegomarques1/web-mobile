@@ -24,10 +24,15 @@ section h1, p {
     font-weight: 500;
 }
 
-#main {
+.main {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
+}
+
+.no_footer {
+    min-height: 90vh;
 }
 
 section {
@@ -88,10 +93,10 @@ section ul {
 
 footer {
     border-top: 1.5px solid #C5C5C5;
-    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 10vh;
 }
 
 footer p {
@@ -131,10 +136,6 @@ section h1, h2 {
 
 section img {
     height: 20vh;
-}
-
-footer {
-    height: 11vh;
 }
 
 /* Outros dispositivos */

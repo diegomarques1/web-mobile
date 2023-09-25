@@ -22,15 +22,21 @@ h1, h2 {
     font-weight: 700;
 }
 
-#main {
-    min-height: 100%;
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.no_footer {
+    min-height: 90vh;
 }
 
 #history {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin-bottom: 17em;
 }
 
 #history section {
@@ -62,6 +68,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 10vh;
 }
 
 footer p, footer a {
