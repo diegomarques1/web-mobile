@@ -163,7 +163,7 @@ button, .confirm_offer {
     padding-left: 2em;
 }
 
-.button_continue, .signal, .home {
+.button_continue, .signal {
     padding-right: 4em;
     padding-left: 4em;
 }
