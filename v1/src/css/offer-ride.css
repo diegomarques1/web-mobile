@@ -126,7 +126,7 @@ header {
     margin-bottom: 1.5em;
 }
 
-button:hover {
+button:hover, a:hover, #options input {
     cursor: pointer;
 }
 
