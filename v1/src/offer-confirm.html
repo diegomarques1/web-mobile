@@ -9,32 +9,34 @@
     <title>Aceitar pedido de carona - MackCarona</title>
 </head>
 <body>
-    <header>
-        <a id="left_side" href="offer-info.html"><img src="img/arrow-back.svg" alt="Ícone de seta"/></a>
-        <a id="right_side" href="home.html"><img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/></a>
-    </header>
-    <div id="offer_ride">
-        <h1>Oferecer carona para:</h1>
-        <strong><p id="person">Mariana Oliveira</p></strong>
-        <form id="offer_form" action="offer-status.html">
-            <fieldset>
-                <label for="actual_location">Localização atual</label>
-                <input type="text" id="actual_location" name="actual_location" required/><br>
-                <label for="select_campus">Campus de destino</label>
-                <select id="select_campus" name="select_campus" required>
-                    <option value="">Selecione uma opção</option>
-                    <option value="alphaville">Alphaville</option>
-                    <option value="campinas">Campinas</option>
-                    <option value="higienopolis">Higienópolis</option>
-                </select><br>
-                <label for="additional_info">Informações adicionais</label>
-                <textarea id="additional_info">Opa, to disponível. Passo aí em 15 min, qq coisa me chama no zap - 11 99999-9999</textarea>
-                <legend>Oferecimento de carona</legend>
-            </fieldset>
-            <div id="options">
-                <input type="submit" class="button_options confirm_offer" value="Oferecer carona"/>
-            </div>
-        </form>
+    <div id="no_footer">
+        <header>
+            <a id="left_side" href="offer-info.html"><img src="img/arrow-back.svg" alt="Ícone de seta"/></a>
+            <a id="right_side" href="home.html"><img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/></a>
+        </header>
+        <div id="offer_ride">
+            <h1>Oferecer carona para:</h1>
+            <strong><p id="person">Mariana Oliveira</p></strong>
+            <form id="offer_form" action="offer-status.html" method="post">
+                <fieldset>
+                    <label for="actual_location">Localização atual</label>
+                    <input type="text" id="actual_location" name="actual_location" required/><br>
+                    <label for="select_campus">Campus de destino</label>
+                    <select id="select_campus" name="select_campus" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="alphaville">Alphaville</option>
+                        <option value="campinas">Campinas</option>
+                        <option value="higienopolis">Higienópolis</option>
+                    </select><br>
+                    <label for="additional_info">Informações adicionais</label>
+                    <textarea id="additional_info">Opa, to disponível. Passo aí em 15 min, qq coisa me chama no zap - 11 99999-9999</textarea>
+                    <legend>Oferecimento de carona</legend>
+                </fieldset>
+                <div id="options">
+                    <input type="submit" class="button_options confirm_offer" value="Oferecer carona"/>
+                </div>
+            </form>
+        </div>
     </div>
     <footer>
         <p id="footer_text">Grupo 2 &copy; 2023</p>
