@@ -86,7 +86,7 @@ footer p, footer a {
 }
 
 /* Mobile */
-header {
+.header_mobile {
     padding: 5% 8% 0% 8%;
     display: flex;
     justify-content: space-between;
@@ -94,7 +94,7 @@ header {
     border-bottom: 1.5px solid #C5C5C5;
 }
 
-header strong {
+.header_mobile strong {
     font-size: 1.5em;
 }
 
@@ -106,6 +106,10 @@ header strong {
 #right_side img {
     height: 5vh;
     padding-bottom: 1vh;
+}
+
+.header_desktop {
+    display: none;
 }
 
 section {
@@ -161,3 +165,6 @@ footer {
 }
 
 /* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    
+}
