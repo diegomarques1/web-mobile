@@ -126,3 +126,18 @@ footer {
 }
 
 /* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    .status {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        gap: 1em;
+    }
+
+    #img_refuse {
+        height: 70vh;
+    }
+
+    #img_agree {
+        width: 60vw;
+    }
+}
