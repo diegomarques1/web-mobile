@@ -246,6 +246,7 @@ fieldset legend {
     gap: 3em;
     margin-left: 8%;
     margin-right: 8%;
+    margin-bottom: 2em;
 }
 
 #success img:first-child {
@@ -353,5 +354,15 @@ footer {
     
     #offer_form fieldset input, #offer_form fieldset select, #offer_form div input {
         font-size: 1.2em;
+    }
+
+    /* offer-status.html e offer-signal.html */
+    #success {
+        margin-top: 2em;
+        gap: 2em;
+    }
+
+    #success img {
+        width: 60vw;
     }
 }

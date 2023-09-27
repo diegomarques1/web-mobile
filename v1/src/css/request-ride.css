@@ -240,6 +240,7 @@ fieldset legend {
     gap: 3em;
     margin-left: 8%;
     margin-right: 8%;
+    margin-bottom: 2em;
 }
 
 #success img:first-child {
@@ -347,5 +348,15 @@ footer {
     
     #request_cont fieldset input, #request_ride fieldset select, #request_ride div input {
         font-size: 1.2em;
+    }
+
+    /* request.status.html */
+    #success {
+        margin-top: 2em;
+        gap: 2em;
+    }
+
+    #success img {
+        width: 60vw;
     }
 }
