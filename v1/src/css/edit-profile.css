@@ -194,3 +194,32 @@ header {
     text-decoration: none;
     color: black;
 }
+
+/* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    #prof_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profile {
+        padding: 1em;
+        width: 60%;
+        max-width: 700px;
+    }
+
+    #personal_data label {
+        font-size: 1.4em;
+        padding-bottom: 0.5vh;
+    }
+    
+    #personal_data input, #personal_data select, #options {
+        font-size: 1.3em;
+    }
+
+    #options {
+        gap: 5em;
+    }
+}
