@@ -113,13 +113,17 @@ header {
 }
 
 #left_side img {
-    height: 3vh;
+    height: 25px;
     padding-bottom: 0.1vh;
 }
 
 #right_side img {
-    height: 5vh;
+    height: 42px;
     padding-bottom: 1vh;
+}
+
+.header_desktop {
+    display: none;
 }
 
 section {
@@ -139,3 +143,30 @@ section img {
 }
 
 /* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    #profile {
+        display: flex;
+        align-items: center;
+    }
+
+    #info {
+        width: 40%;
+        display: flex;
+        padding: 1em;
+    }
+
+    #profile a {
+        width: 10vw;
+        padding: 1.2em;
+        border-radius: 0.3em;
+        font-size: 0.8em;
+    }
+
+    #profile h1 {
+        font-size: 1.6em;
+    }
+
+    #profile {
+        font-size: 1.1em;
+    }
+}

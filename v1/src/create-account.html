@@ -8,35 +8,37 @@
     <link rel="icon" href="img/sports-car_67994.png"/>
 </head>
 <body>
-    <div id="initial_logo">
-        <a href="index.html">
-            <img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/>
-            <strong>Mack Carona</strong>
-        </a>
+    <div id="acc_cont">
+        <div id="initial_logo">
+            <a href="index.html">
+                <img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/>
+                <strong>Mack Carona</strong>
+            </a>
+        </div>
+        <section id="create_acc">
+            <h1>Crie sua conta</h1>
+            <!-- <form action="button"> -->
+            <form action="home.html" method="POST">
+                <fieldset id="personal_data">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome completo..." required/><br>
+                    <label for="tia">TIA</label>
+                    <input type="text" id="tia" name="tia" placeholder="Digite seu TIA..." maxlength="8" required/><br>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required/><br>
+                    <label for="cellphone">Celular</label>
+                    <input type="number" id="cellphone" name="cellphone" placeholder="Digite seu número com DDD..." required/><br>
+                    <label for="birthdate">Data de nascimento</label>
+                    <input type="date" id="birthdate" name="birthdate" required/><br>
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha..." required/><br>
+                    <label for="password">Confirmar senha</label>
+                    <input type="password" id="password_confirm" name="password_confirm" placeholder="Digite novamente sua senha..." required/><br>
+                    <legend>Dados pessoais</legend>
+                </fieldset>
+                <input id="button" type="submit" value="Criar conta"/>
+            </form>
+        </section>
     </div>
-    <section id="create_acc">
-        <h1>Crie sua conta</h1>
-        <!-- <form action="button"> -->
-        <form action="home.html" method="POST">
-            <fieldset id="personal_data">
-                <label for="name">Nome completo</label>
-                <input type="text" id="name" name="name" placeholder="Digite seu nome completo..." required/><br>
-                <label for="tia">TIA</label>
-                <input type="text" id="tia" name="tia" placeholder="Digite seu TIA..." maxlength="8" required/><br>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required/><br>
-                <label for="cellphone">Celular</label>
-                <input type="number" id="cellphone" name="cellphone" placeholder="Digite seu número com DDD..." required/><br>
-                <label for="birthdate">Data de nascimento</label>
-                <input type="date" id="birthdate" name="birthdate" required/><br>
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" placeholder="Digite sua senha..." required/><br>
-                <label for="password">Confirmar senha</label>
-                <input type="password" id="password_confirm" name="password_confirm" placeholder="Digite novamente sua senha..." required/><br>
-                <legend>Dados pessoais</legend>
-            </fieldset>
-            <input id="button" type="submit" value="Criar conta"/>
-        </form>
-    </section>
 </body>
 </html>

@@ -67,13 +67,17 @@ header {
 }
 
 #left_side img {
-    height: 3vh;
+    height: 25px;
     padding-bottom: 0.1vh;
 }
 
 #right_side img {
-    height: 5vh;
+    height: 42px;
     padding-bottom: 1vh;
+}
+
+.header_desktop {
+    display: none;
 }
 
 /* Caronas disponíveis, e informação da carona */
@@ -115,7 +119,7 @@ header {
 }
 
 /* Div com botões das páginas de solicitação de carona */
-#options {
+#options, #options_mobile {
     width: 100%;
     display: flex;
     align-items: center;
@@ -124,8 +128,12 @@ header {
     margin-bottom: 1.5em;
 }
 
+#options_desktop {
+    display: none;
+}
+
 /* Botões em geral */
-button:hover, a:hover, #options input {
+button:hover, a:hover, #options, #options_mobile, #options_desktop input {
     cursor: pointer;
 }
 
@@ -232,6 +240,7 @@ fieldset legend {
     gap: 3em;
     margin-left: 8%;
     margin-right: 8%;
+    margin-bottom: 2em;
 }
 
 #success img:first-child {
@@ -254,4 +263,100 @@ footer {
     min-height: 7vh;
     border-top: 1.5px solid #C5C5C5;
     text-align: center;
+}
+
+/* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    /* request-ride.html e request-options.html */
+    .no_footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #near {
+        align-self: center;
+        width: 70%;
+        font-size: large;
+        margin-top: 1em;
+    }
+
+    #near h1 {
+        margin-bottom: 1em;
+    }
+
+    /* request-info.html */
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2em;
+        width: 100%;
+    }
+
+    #description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 20px;
+        font-size: large;
+    }
+
+    #options_mobile {
+        display: none;
+    }
+
+    #options_desktop {
+        margin-top: 1.5em;
+        display: flex;
+    }
+
+    #location img {
+        margin: 0;
+        height: 60vh;
+        border-radius: 10px;
+    }
+
+    /* request-confirm.html e request-ask.html */
+    #request_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    #request_cont h1 {
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }    
+
+    #request_cont strong p {
+        font-size: 1.3em;
+    }
+
+    #request_ride {
+        padding: 1em;
+        width: 60%;
+        max-width: 700px;
+    }
+
+    #request_ride fieldset label {
+        font-size: 1.3em;
+        padding-bottom: 0.5vh;
+    }
+    
+    #request_cont fieldset input, #request_ride fieldset select, #request_ride div input {
+        font-size: 1.2em;
+    }
+
+    /* request.status.html */
+    #success {
+        margin-top: 2em;
+        gap: 2em;
+    }
+
+    #success img {
+        width: 60vw;
+    }
 }

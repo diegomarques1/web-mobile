@@ -86,7 +86,7 @@ footer p, footer a {
 }
 
 /* Mobile */
-header {
+.header_mobile {
     padding: 5% 8% 0% 8%;
     display: flex;
     justify-content: space-between;
@@ -94,18 +94,22 @@ header {
     border-bottom: 1.5px solid #C5C5C5;
 }
 
-header strong {
+.header_mobile strong {
     font-size: 1.5em;
 }
 
 #left_side img {
-    height: 3vh;
+    height: 25px;
     padding-bottom: 0.1vh;
 }
 
 #right_side img {
-    height: 5vh;
+    height: 42px;
     padding-bottom: 1vh;
+}
+
+.header_desktop {
+    display: none;
 }
 
 section {
@@ -161,3 +165,50 @@ footer {
 }
 
 /* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    #feed {
+        margin-left: 20em;
+        margin-right: 20em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section h1 {
+        margin-top: 0.3em;
+        margin-bottom: 0.5em;
+        margin-right: auto;
+        font-size: 1.6em;
+    }
+
+    #search_bar {
+        min-width: 480px;
+        align-self: center;
+    }
+
+    #search_bar input {
+        font-size: 1.1em;
+        padding-left: 0.5em;
+        font-weight: 400;
+    }
+
+    #options {
+        margin-bottom: 0;
+        gap: 2em;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    #options button {
+        min-width: 230px;
+    }
+
+    #svg {
+        display: flex;
+        justify-content: center;
+    }
+
+    #svg img {
+        height: 60vh;
+    }
+
+}

@@ -6,65 +6,89 @@
     <title>Editar perfil - MackCarona</title>
     <link rel="stylesheet" type="text/css" href="css/edit-profile.css"/>
     <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar-desktop.css"/>
     <link rel="icon" href="img/sports-car_67994.png"/>
 </head>
 <body>
     <div class="main">
-        <header>
+        <header class="header_mobile">
             <a id="left_side" href="#menu"><img src="img/menu_2976215.png" alt="Ícone de menu"/></a>
             <a id="right_side" href="home.html"><img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/></a>
         </header>
-        <section id="profile">
-            <h1>Perfil</h1>
-            <div id="change_pic">
-                <img src="img/profile.svg" alt="Ícone de perfil">
-                <label for="change"><img src="img/photo.svg" alt="Ícone de câmera"></label>
-                <input type="file" id="change" name="change"/>
+        <header class="header_desktop">
+            <div class="desktop_logo">
+                <a href="home.html">
+                    <img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/>
+                    <strong>Mack Carona</strong>
+                </a>
             </div>
-            <section id="edit_info">
-                <h2>Rafael Valente</h2>
-                <form action="profile.html" method="POST">
-                    <fieldset id="personal_data">
-                        <label for="name">Nome completo</label>
-                        <input type="text" id="name" name="name" value="Rafael Valente" placeholder="Digite seu nome completo..." required/><br>
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" value="rafael@gmail.com" placeholder="Digite seu e-mail..." required/><br>
-                        <label for="cellphone">Celular</label>
-                        <input type="number" id="cellphone" name="cellphone" value="11999999999" placeholder="Digite seu número com DDD..." required/><br>
-                        <label for="address">Endereço</label>
-                        <input type="text" id="address" name="address" placeholder="Digite seu endereço completo..."/><br>
-                        <label for="region">Região</label>
-                        <input type="text" id="region" name="region" placeholder="Digite sua região/bairro..."/><br>
-                        <label for="function">Função</label>
-                        <select name="function" id="function">
-                            <option value="none" selected>Selecione uma opção</option>
-                            <option value="student">Estudante</option>
-                            <option value="employee">Funcionário(a)</option>
-                            <option value="teacher">Professor(a)</option>
-                        </select><br>
-                        <label for="function">Campus</label>
-                        <select name="campus" id="campus">
-                            <option value="none" selected>Selecione uma opção</option>
-                            <option value="alphaville">Alphaville</option>
-                            <option value="campinas">Campinas</option>
-                            <option value="higienopolis">Higienópolis</option>
-                        </select><br>
-                        <label for="function">Período</label>
-                        <select name="turn" id="turn">
-                            <option value="none" selected>Selecione uma opção</option>
-                            <option value="morning">Matutino</option>
-                            <option value="afternoon">Vespertino</option>
-                            <option value="night">Noturno</option>
-                        </select><br>
-                        <legend>Dados pessoais</legend>
-                    </fieldset>
-                    <div id="options">
-                        <a class="button cancel" href="profile.html">Cancelar</a>
-                        <input class="button confirm" type="submit" value="Confirmar"/>
-                    </div>
-                </form>
+            <nav>
+                <ul>
+                    <li><a href="request-ride.html">Solicitar carona</a></li>
+                    <li><a href="offer-ride.html">Oferecer carona</a></li>
+                    <li><a href="ongoing.html">Em andamento</a></li>
+                    <li><a href="history.html">Histórico</a></li>
+                    <!-- <li><a href="#">Itens salvos</a></li> -->
+                </ul>
+                <div class="nav_profile">
+                    <a href="profile.html"><img src="img/user_1144760.svg" alt="Ícone de perfil"/></a>
+                    <a href="index.html">Sair</a>
+                </div>
+            </nav>
+        </header>
+        <div id="prof_cont">
+            <section id="profile">
+                <h1>Perfil</h1>
+                <div id="change_pic">
+                    <img src="img/profile.svg" alt="Ícone de perfil">
+                    <label for="change"><img src="img/photo.svg" alt="Ícone de câmera"></label>
+                    <input type="file" id="change" name="change"/>
+                </div>
+                <section id="edit_info">
+                    <h2>Rafael Valente</h2>
+                    <form action="profile.html" method="POST">
+                        <fieldset id="personal_data">
+                            <label for="name">Nome completo</label>
+                            <input type="text" id="name" name="name" value="Rafael Valente" placeholder="Digite seu nome completo..." required/><br>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" value="rafael@gmail.com" placeholder="Digite seu e-mail..." required/><br>
+                            <label for="cellphone">Celular</label>
+                            <input type="number" id="cellphone" name="cellphone" value="11999999999" placeholder="Digite seu número com DDD..." required/><br>
+                            <label for="address">Endereço</label>
+                            <input type="text" id="address" name="address" placeholder="Digite seu endereço completo..."/><br>
+                            <label for="region">Região</label>
+                            <input type="text" id="region" name="region" placeholder="Digite sua região/bairro..."/><br>
+                            <label for="function">Função</label>
+                            <select name="function" id="function">
+                                <option value="none" selected>Selecione uma opção</option>
+                                <option value="student">Estudante</option>
+                                <option value="employee">Funcionário(a)</option>
+                                <option value="teacher">Professor(a)</option>
+                            </select><br>
+                            <label for="function">Campus</label>
+                            <select name="campus" id="campus">
+                                <option value="none" selected>Selecione uma opção</option>
+                                <option value="alphaville">Alphaville</option>
+                                <option value="campinas">Campinas</option>
+                                <option value="higienopolis">Higienópolis</option>
+                            </select><br>
+                            <label for="function">Período</label>
+                            <select name="turn" id="turn">
+                                <option value="none" selected>Selecione uma opção</option>
+                                <option value="morning">Matutino</option>
+                                <option value="afternoon">Vespertino</option>
+                                <option value="night">Noturno</option>
+                            </select><br>
+                            <legend>Dados pessoais</legend>
+                        </fieldset>
+                        <div id="options">
+                            <a class="button cancel" href="profile.html">Cancelar</a>
+                            <input class="button confirm" type="submit" value="Confirmar"/>
+                        </div>
+                    </form>
+                </section>
             </section>
-        </section>
+        </div>
         <footer>
             <p>Grupo 2 &copy; 2023</p>
         </footer>

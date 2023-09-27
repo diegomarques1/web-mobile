@@ -5,15 +5,37 @@
     <meta name="viewport" content="width=device-width, inicial scale=0">
     <link rel="stylesheet" type="text/css" href="css/ongoing.css"/>
     <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar-desktop.css"/>
     <link rel="icon" href="img/sports-car_67994.png"/>
     <title>Caronas em andamento - MackCarona</title>
 </head>
 <body>
     <div class="main">
         <div class="no_footer">
-            <header>
+            <header class="header_mobile">
                 <a id="left_side" href="#menu"><img src="img/menu_2976215.png" alt="Ícone de menu"/></a>
                 <a id="right_side" href="home.html"><img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/></a>
+            </header>
+            <header class="header_desktop">
+                <div class="desktop_logo">
+                    <a href="home.html">
+                        <img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/>
+                        <strong>Mack Carona</strong>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="request-ride.html">Solicitar carona</a></li>
+                        <li><a href="offer-ride.html">Oferecer carona</a></li>
+                        <li><a href="ongoing.html">Em andamento</a></li>
+                        <li><a href="history.html">Histórico</a></li>
+                        <!-- <li><a href="#">Itens salvos</a></li> -->
+                    </ul>
+                    <div class="nav_profile">
+                        <a href="profile.html"><img src="img/user_1144760.svg" alt="Ícone de perfil"/></a>
+                        <a href="index.html">Sair</a>
+                    </div>
+                </nav>
             </header>
             <div id="ongoing">
                 <h1>Caronas em andamento</h1>

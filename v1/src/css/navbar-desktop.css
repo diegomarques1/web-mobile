@@ -1,0 +1,73 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Navbar do desktop */
+@media only screen and (min-width: 768px) {
+    .header_mobile {
+        display: none;
+    }
+
+    .header_desktop {
+        display: flex;
+        padding: 10px 0 0 10px;
+        border-bottom: 1.5px solid #C5C5C5;
+        margin-bottom: 1em;
+    }
+
+    .desktop_logo {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .desktop_logo a {
+        display: flex;
+        gap: 1em;
+    }
+    
+    .desktop_logo a strong {
+        margin-bottom: 15px;
+        align-self: flex-end;
+        font-size: 1.2em;
+        width: 7em;
+    }
+
+    .desktop_logo a img {
+        height: 3em;
+        margin-bottom: 5px;
+    }
+
+    .header_desktop nav {
+        width: 100%;
+        display: flex;
+    }
+
+    .header_desktop nav ul {
+        display: flex;
+        gap: 2em;
+        width: 100%;
+    }
+
+    .header_desktop nav ul li {
+        list-style-type: none;
+    }
+
+    .header_desktop a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+    
+    .nav_profile {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .nav_profile img {
+        height: 3vh;
+    }
+    
+}

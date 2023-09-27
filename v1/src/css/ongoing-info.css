@@ -39,13 +39,17 @@ header {
 }
 
 #left_side img {
-    height: 3vh;
+    height: 25px;
     padding-bottom: 0.1vh;
 }
 
 #right_side img {
-    height: 5vh;
+    height: 42px;
     padding-bottom: 1vh;
+}
+
+.header_desktop {
+    display: none;
 }
 
 h1 {
@@ -83,11 +87,15 @@ h1 {
     height: 60%;
 }
 
-#options {
+#options_mobile {
     display: flex;
     width: 100%;
     justify-content: space-around;
     margin-bottom: 1.5em;
+}
+
+#options_desktop {
+    display: none;
 }
 
 button:hover {
@@ -122,3 +130,37 @@ footer {
 }
 
 /* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    .info_cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2em;
+        width: 100%;
+    }
+
+    #description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 40%;
+        margin-left: 20px;
+        font-size: large;
+    }
+
+    #options_mobile {
+        display: none;
+    }
+
+    #options_desktop {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1em;
+    }
+
+    #location img {
+        margin: 0;
+        height: 60vh;
+        border-radius: 10px;
+    }
+}

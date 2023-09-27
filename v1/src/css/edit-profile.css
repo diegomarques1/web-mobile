@@ -131,13 +131,17 @@ header {
 }
 
 #left_side img {
-    height: 3vh;
+    height: 25px;
     padding-bottom: 0.1vh;
 }
 
 #right_side img {
-    height: 5vh;
+    height: 42px;
     padding-bottom: 1vh;
+}
+
+.header_desktop {
+    display: none;
 }
 
 #change_pic img {
@@ -189,4 +193,33 @@ header {
     border: 1px solid rgba(29, 29, 29, 0.422);
     text-decoration: none;
     color: black;
+}
+
+/* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    #prof_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profile {
+        padding: 1em;
+        width: 60%;
+        max-width: 700px;
+    }
+
+    #personal_data label {
+        font-size: 1.4em;
+        padding-bottom: 0.5vh;
+    }
+    
+    #personal_data input, #personal_data select, #options {
+        font-size: 1.3em;
+    }
+
+    #options {
+        gap: 5em;
+    }
 }
