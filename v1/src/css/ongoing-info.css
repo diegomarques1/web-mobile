@@ -145,6 +145,7 @@ footer {
         justify-content: flex-start;
         width: 40%;
         margin-left: 20px;
+        font-size: large;
     }
 
     #options_mobile {
