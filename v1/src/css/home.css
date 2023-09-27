@@ -166,21 +166,24 @@ footer {
 
 /* Outros dispositivos */
 @media only screen and (min-width: 768px) {
-
     #feed {
         margin-left: 20em;
         margin-right: 20em;
+        display: flex;
+        flex-direction: column;
     }
 
     section h1 {
         margin-top: 0.3em;
         margin-bottom: 0.5em;
+        margin-right: auto;
         font-size: 1.6em;
     }
 
-    /* #search_bar {
+    #search_bar {
         min-width: 480px;
-    } */
+        align-self: center;
+    }
 
     #search_bar input {
         font-size: 1.1em;
