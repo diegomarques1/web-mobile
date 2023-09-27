@@ -316,12 +316,22 @@ footer {
         border-radius: 10px;
     }
 
-    /* request-confirm.html */
+    /* request-confirm.html e request-ask.html */
     #request_cont {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 1em;
+    }
+
+    #request_cont h1 {
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }    
+
+    #request_cont strong p {
+        font-size: 1.3em;
     }
 
     #request_ride {

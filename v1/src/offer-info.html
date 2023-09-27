@@ -10,52 +10,57 @@
     <title>Informações do pedido - MackCarona</title>
 </head>
 <body>
-    <header class="header_mobile">
-        <a id="left_side" href="offer-ride.html"><img src="img/arrow-back.svg" alt="Ícone de seta"/></a>
-        <a id="right_side" href="home.html"><img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/></a>
-    </header>
-    <header class="header_desktop">
-        <div class="desktop_logo">
-            <a href="home.html">
-                <img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/>
-                <strong>Mack Carona</strong>
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="request-ride.html">Solicitar carona</a></li>
-                <li><a href="offer-ride.html">Oferecer carona</a></li>
-                <li><a href="ongoing.html">Em andamento</a></li>
-                <li><a href="history.html">Histórico</a></li>
-                <!-- <li><a href="#">Itens salvos</a></li> -->
-            </ul>
-            <div class="nav_profile">
-                <a href="profile.html"><img src="img/user_1144760.svg" alt="Ícone de perfil"/></a>
-                <a href="index.html">Sair</a>
+    <div class="no_footer">
+        <header class="header_mobile">
+            <a id="left_side" href="offer-ride.html"><img src="img/arrow-back.svg" alt="Ícone de seta"/></a>
+            <a id="right_side" href="home.html"><img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/></a>
+        </header>
+        <header class="header_desktop">
+            <div class="desktop_logo">
+                <a href="home.html">
+                    <img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/>
+                    <strong>Mack Carona</strong>
+                </a>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section id="description">
-            <h1>Informações da solicitação</h1>
-            <div id="user_description">
-                <p><strong>Mariana Oliveira</strong></p>
-                <p>E-mail: mariana@gmail.com</p>
-                <p>Celular: (11) 92222-2222</p>
-                <p>Localização atual: Rua Y, 581, Apto. 32</p>
-                <p>Região: Itaquera</p>
-                <p>Campus: Alphaville</p>
-                <p>Solicitando carona: <strong>sim</strong></p>
-                <p>Mensagem: <strong id="additional_info">Preciso ir hj pra facul de tarde pra um evento. Alguém consegue?</strong></p>
+            <nav>
+                <ul>
+                    <li><a href="request-ride.html">Solicitar carona</a></li>
+                    <li><a href="offer-ride.html">Oferecer carona</a></li>
+                    <li><a href="ongoing.html">Em andamento</a></li>
+                    <li><a href="history.html">Histórico</a></li>
+                    <!-- <li><a href="#">Itens salvos</a></li> -->
+                </ul>
+                <div class="nav_profile">
+                    <a href="profile.html"><img src="img/user_1144760.svg" alt="Ícone de perfil"/></a>
+                    <a href="index.html">Sair</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="description">
+                <h1>Informações da solicitação</h1>
+                <div id="user_description">
+                    <p><strong>Mariana Oliveira</strong></p>
+                    <p>E-mail: mariana@gmail.com</p>
+                    <p>Celular: (11) 92222-2222</p>
+                    <p>Localização atual: Rua Y, 581, Apto. 32</p>
+                    <p>Região: Itaquera</p>
+                    <p>Campus: Alphaville</p>
+                    <p>Solicitando carona: <strong>sim</strong></p>
+                    <p>Mensagem: <strong id="additional_info">Preciso ir hj pra facul de tarde pra um evento. Alguém consegue?</strong></p>
+                </div>
+                <div id="options_desktop">
+                    <a href="offer-confirm.html"><button type="button" class="button_options button_continue">Continuar</button></a>
+                </div>
+            </section>
+            <div id="location">
+                <img id="map_location" src="img/location-on-map.png" alt="Imagem de um mapa de São Paulo"/>
             </div>
-        </section>
-        <div id="location">
-            <img id="map_location" src="img/location-on-map.png" alt="Imagem de um mapa de São Paulo"/>
-        </div>
-        <div id="options">
-            <a href="offer-confirm.html"><button type="button" class="button_options button_continue">Continuar</button></a>
-        </div>
-    </main>
+            <div id="options_mobile">
+                <a href="offer-confirm.html"><button type="button" class="button_options button_continue">Continuar</button></a>
+            </div>
+        </main>
+    </div>
     <footer>
         <p id="footer_text">Grupo 2 &copy; 2023</p>
     </footer>
