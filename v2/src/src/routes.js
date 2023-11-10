@@ -10,7 +10,7 @@ export default function RoutesApp() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/createAccount" element={<CreateAccount />} />
+        <Route path="/create-account" element={<CreateAccount />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,7 +1,8 @@
 import React from "react";
 
-import "./Index.css";
-import { useNavigate } from "react-router-dom";
+import styles from "./Index.module.css";
+import { Link, useNavigate } from "react-router-dom";
+import InitialLogo from "../../components/initial-logo/InitialLogo";
 
 export default function Index() {
     const navigate = useNavigate();
@@ -12,33 +13,28 @@ export default function Index() {
     }
 
     return (
-    <div id="main">
-        <div id="login_cont">
-            <div id="initial_logo">
-                <img src="../../img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/>
-                <strong>Mack Carona</strong>
+    <div id={styles.login_cont}>
+        <InitialLogo />
+        <section id={styles.login}>
+            <h1>Login</h1>
+            <form onSubmit={handleSubmit}>
+                <fieldset id={styles.login_field}>
+                    <label htmlFor="email">E-mail</label>
+                    <input type="email" id={styles.email} name="email" placeholder="Digite seu e-mail..." required/><br/>
+                    <label htmlFor="password">Senha</label>
+                    <input type="password" id={styles.password} name="password" placeholder="Digite sua senha..." required/><br/>
+                    <legend>Login</legend>
+                </fieldset>
+                <input id={styles.button} type="submit" value="Fazer login"/>
+            </form>
+            <div id={styles.login_options}>
+                <Link id={styles.forgot_password} to="/password-reset">Esqueci minha senha</Link>
+                <Link id={styles.create_acc} to="/create-account">Criar conta</Link>
             </div>
-            <section id="login">
-                <h1>Login</h1>
-                <form onSubmit={handleSubmit}>
-                    <fieldset id="login_field">
-                        <label htmlFor="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required/><br/>
-                        <label htmlFor="password">Senha</label>
-                        <input type="password" id="password" name="password" placeholder="Digite sua senha..." required/><br/>
-                        <legend>Login</legend>
-                    </fieldset>
-                    <input id="button" type="submit" value="Fazer login"/>
-                </form>
-                <div id="login_options">
-                    <a id="forgot_password" href="password-reset.html">Esqueci minha senha</a>
-                    <a id="create_acc" href="create-account.html">Criar conta</a>
-                </div>
-                <div id="no_login">
-                    <a href="home.html">Iniciar sem fazer login</a>
-                </div>
-            </section>
-        </div>
+            <div id={styles.no_login}>
+                <Link to="/home">Iniciar sem fazer login</Link>
+            </div>
+        </section>
     </div>
     );
 }
