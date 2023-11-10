@@ -8,7 +8,7 @@
 }
 
 /* Reset */
-html, body, #root {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -33,70 +33,71 @@ body {
     background-color: var(--backgroundColor);
 }
 
-#acc_cont {
+a {
+    text-decoration: none;
+    color: var(--borderColor);
+}
+
+#login_cont {
     display: flex;
     flex-direction: column;
 }
 
 #initial_logo {
-    padding: 0.5vh;
-    width: 180px;
+    padding: 1vh;
+    width: 200px;
     border: 1px solid var(--borderColor);
     border-radius: 15px;
-    align-self: center;
-}
-
-#initial_logo a {
-    text-decoration: none;
+    font-size: 24px;
     color: var(--borderColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
+    align-self: center;
 }
 
 #initial_logo img {
     filter: invert(1);
 }
 
-#create_acc {
+#login {
     color: var(--borderColor);
     font-weight: medium;
 }
 
-#create_acc h1 {
+#login h1 {
     font-weight: bold;
 }
 
-#create_acc form {
+#login form {
     display: flex;
     flex-direction: column;
 }
 
-#personal_data {
+#login_field {
     padding: 0;
     border: none;
     display: flex;
     flex-direction: column;
 }
 
-#personal_data input {
+#login_field input {
+    border: 1px solid var(--borderColor);
     padding-left: 0.5rem;
     border-radius: 3px;
     height: 3.5vh;
-    border: 1px solid var(--borderColor);
 }
 
-#personal_data input:focus {
+#login_field input:focus {
     outline: none;
 }
 
-#personal_data legend {
+#login_field legend {
     display: none;
 }
 
-#button {
+#login_button {
     font-weight: bold;
     border: 1px solid var(--borderColor);
     border-radius: 3px;
@@ -104,44 +105,78 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2vh;
+    margin-top: 0.5vh;
+    margin-bottom: 1.5vh;
+}
+
+#login_button, a {
+    cursor: pointer;
+}
+
+#login_options {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw;
+}
+
+#forgot_password {
+    color: #d5cdcd;
+}
+
+#no_login {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
 }
 
 /* Mobile */
 #initial_logo {
-    margin: 20px 0 20px 0;
+    margin: 100px 0 50px 0;
 }
 
 #initial_logo img {
-    height: 4vh;
-    padding-bottom: 0.5vh;
+    height: 6vh;
+    padding-bottom: 1vh;
 }
 
-#create_acc {
+#login {
     padding: 3%;
+    padding-top: 0;
     font-size: 12px;
 }
 
-#create_acc h1 {
-    padding-bottom: 1vh;
+#login h1 {
+    padding-bottom: 0.5vh;
     font-size: 24px;
 }
 
-#personal_data label {
+#login_field label {
+    padding-top: 1vh;
     padding-bottom: 0.2vh;
 }
 
+#no_login {
+    padding-top: 10vh;
+}
 
 /* Outros dispositivos */
 @media only screen and (min-width: 768px) {
-    body, #root {
+    body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #acc_cont {
+    .initial_root {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #login_cont {
         border: 1.5px solid var(--borderColor);
         border-radius: 10px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
@@ -151,27 +186,36 @@ body {
     }
 
     #initial_logo {
-        margin: 15px 0 15px 0;
+        margin: 15px 0 5px 0;
     }
-
+    
     #initial_logo img {
         height: 5vh;
     }
-
-    #acc_cont h1 {
+    
+    #login {
+        margin: 2% 5% 2% 5%;
+        padding: 1%;
+    }
+    
+    #login h1 {
         padding-bottom: 1vh;
     }
-
-    #personal_data label {
+    
+    #login_field label {
         font-size: 1.4em;
         padding-bottom: 0.5vh;
     }
     
-    #personal_data input {
+    #login_field input {
         font-size: 1.2em;
     }
 
-    #button {
+    #login_button, a {
         font-size: 1.3em;
+    }
+
+    #no_login {
+        padding-top: 5vh;
     }
 }
