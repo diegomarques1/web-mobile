@@ -4,20 +4,9 @@ import { React, useEffect } from "react";
 import {useRouter} from "next/navigation";
 
 import "./page.css";
-import InitialLogo from "../../components/initial-logo/InitialLogo";
+import Logo from "../components/logo/Logo";
 
-function CreateAccount() {
-    // const navigate = useNavigate();
-    // const location = useLocation();
-    // const root = document.getElementById("root");
-
-    // useEffect(() => {
-    //     if (location.pathname === ("/create-account")) {
-    //         root.classList.remove(...root.classList);
-    //         root.classList.add("initial_root");
-    //     }
-    // }, [location, root])
-
+export default function CreateAccount() {
     const router = useRouter();
 
     const handleSubmit = (event) => {
@@ -27,7 +16,7 @@ function CreateAccount() {
 
     return (
     <div id="acc_cont">
-        <InitialLogo />
+        <Logo initial={true} />
         <section id="create_acc">
             <h1>Crie sua conta</h1>
             <form onSubmit={handleSubmit}>
@@ -54,5 +43,3 @@ function CreateAccount() {
     </div>
     );
 }
-
-export default CreateAccount();

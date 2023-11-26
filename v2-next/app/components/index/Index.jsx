@@ -1,22 +1,12 @@
 "use client";
 
-import { React, useEffect } from "react";
+import { React } from "react";
 import {useRouter} from "next/navigation";
-import Link from "next/link";
 
 import "./Index.css";
-import InitialLogo from "../initial-logo/InitialLogo";
+import Logo from "../logo/Logo";
 
-function Index() {
-    // const root = document.getElementById("root");
-
-    // useEffect(() => {
-    //     if (location.pathname === ("/")) {
-    //         root.classList.remove(...root.classList);
-    //         root.classList.add("initial_root");
-    //     }
-    // }, [location, root])
-
+export default function Index() {
     const router = useRouter();
 
     const handleSubmit = (event) => {
@@ -26,7 +16,7 @@ function Index() {
 
     return (
     <div id="login_cont">
-        <InitialLogo />
+        <Logo initial={true} />
         <section id="login">
             <h1>Login</h1>
             <form onSubmit={handleSubmit}>
@@ -40,15 +30,13 @@ function Index() {
                 <input id="login_button" type="submit" value="Fazer login"/>
             </form>
             <div id="login_options">
-                <Link id="forgot_password" href="/password-reset">Esqueci minha senha</Link>
-                <Link id="create_account" href="/create-account">Criar conta</Link>
+                <a id="forgot_password" href="/password-reset">Esqueci minha senha</a>
+                <a id="create_account" href="/create-account">Criar conta</a>
             </div>
             <div id="no_login">
-                <Link href="/home">Iniciar sem fazer login</Link>
+                <a href="/home">Iniciar sem fazer login</a>
             </div>
         </section>
     </div>
     );
 }
-
-export default Index;

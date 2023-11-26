@@ -1,20 +1,20 @@
 import React from "react";
 
-import styles from "./InitialLogo.module.css";
-
-import Link from "next/link";
+import styles from "./Logo.module.css";
 
 // TODO: refatorar para renderização condicional em um componente só (Logo)
 
-function InitialLogo() {
+export default function Logo({initial=False}) {
     return (
+        initial ? (
         <div id={styles.initial_logo}>
-            <Link href="/">
+            <a href="/">
                 <img src="img/sports-car_67994.png" alt="Ícone de um carro em visão frontal"/>
                 <strong>Mack Carona</strong>
-            </Link>
-        </div>
+            </a>
+        </div>)
+        : (
+            <div>teste</div>
+        )
     );
 }
-
-export default InitialLogo;
