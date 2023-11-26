@@ -1,0 +1,146 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Variáveis */
+:root {
+    --backgroundColor: #D84E4E; 
+    --borderColor: #FFFFFF;
+}
+
+/* Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section h1 {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+/* Formatação básica */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+a {
+    text-decoration: none;
+    color: var(--borderColor);
+}
+
+#pass_cont {
+    display: flex;
+    flex-direction: column;
+}
+
+#password_container {
+    color: var(--borderColor);
+    font-weight: medium;
+}
+
+#password_container h1 {
+    font-weight: bold;
+}
+
+#password_container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#reset_field {
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#reset_field input {
+    padding-left: 0.5rem;
+    border-radius: 3px;
+    height: 3.5vh;
+    border: 1px solid var(--borderColor);
+}
+
+#reset_field input:focus {
+    outline: none;
+}
+
+#reset_field legend {
+    display: none;
+}
+
+#button {
+    font-weight: bold;
+    border: 1px solid var(--borderColor);
+    border-radius: 3px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5vh;
+    margin-bottom: 1.5vh;
+    cursor: pointer;
+}
+
+/* Mobile */
+#password_container {
+    padding: 3%;
+    padding-top: 0;
+    font-size: 12px;
+}
+
+#password_container h1 {
+    padding-bottom: 0.5vh;
+    font-size: 24px;
+}
+
+#reset_field label {
+    padding-top: 1vh;
+    padding-bottom: 0.2vh;
+}
+
+/* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pass_cont {
+        border: 1.5px solid var(--borderColor);
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+        padding: 1em;
+        width: 60%;
+        max-width: 700px;
+    }
+
+    #password_container h1 {
+        padding-bottom: 1vh;
+    }
+
+    #reset_field label {
+        font-size: 1.4em;
+        padding-bottom: 0.5vh;
+    }
+    
+    #reset_field input {
+        font-size: 1.2em;
+    }
+
+    #button {
+        font-size: 1.3em;
+    }
+}
