@@ -13,11 +13,11 @@ export default function Menu() {
                 <ul>
                     <li>
                         <img src="img/hand-ride.svg" alt="Ícone de mão levantada"/>
-                        <a href="/request/ride">Solicitar carona</a>
+                        <a href="/request-ride">Solicitar carona</a>
                     </li>
                     <li>
                         <img src="img/car-front.svg" alt="Ícone de carro na visão frontal"/>
-                        <a href="/offer/ride">Oferecer carona</a>
+                        <a href="/offer-ride">Oferecer carona</a>
                     </li>
                     <li>
                         <img src="img/hourglass.svg" alt="Ícone de ampulheta"/>

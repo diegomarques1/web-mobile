@@ -6,8 +6,8 @@ export default function Navbar() {
     return (
         <nav>
             <ul>
-                <li><a href="/request/ride">Solicitar carona</a></li>
-                <li><a href="/offer/ride">Oferecer carona</a></li>
+                <li><a href="/request-ride">Solicitar carona</a></li>
+                <li><a href="/offer-ride">Oferecer carona</a></li>
                 <li><a href="/ongoing">Em andamento</a></li>
                 <li><a href="/history">Histórico</a></li>
             </ul>
