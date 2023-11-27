@@ -6,4 +6,4 @@ v1: HTML/CSS puro
 
 v2: React com Next
 
-Link: https://web-mobile-pink.vercel.app/
+Link da aplicação: https://web-mobile-pink.vercel.app/
