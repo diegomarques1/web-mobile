@@ -3,6 +3,7 @@ Projeto desenvolvido na disciplina Web Mobile, cuja proposta era desenvolver um 
 A aplicação consiste em ser um meio de solicitar ou dar caronas para qualquer campus da universidade.
 
 v1: HTML/CSS puro
+
 v2: React com Next
 
 Link: https://web-mobile-pink.vercel.app/
