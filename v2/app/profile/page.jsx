@@ -28,8 +28,6 @@ export default function Profile() {
 
     const handleChange = (event) => {
         const { name, value } = event.target;
-        console.log(name);
-        console.log(" " + value);
         setInfo((prevInfo) => ({
             ...prevInfo,
             [name]: value,

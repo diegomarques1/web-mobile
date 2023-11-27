@@ -8,7 +8,6 @@ import Header from "../components/header/Header";
 
 export default function OfferConfirm(props) {
     const { searchParams } = props;
-    console.log(searchParams.name);
 
     const handleSubmit = (event) => {
         event.preventDefault();
