@@ -1,0 +1,123 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Variáveis */
+:root {
+    --redTone: #D84E4E;
+    --whiteTone: #ffffff;
+    --borderColor: #9c9c9c;
+}
+
+/* Reset */
+html, body {
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+/* Formatação básica */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.no_footer {
+    min-height: 90vh;
+}
+
+h1 {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+/* Página de sucesso */
+.status {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2em;
+}
+
+.status img:first-child {
+    height: 15vh;
+}
+
+.status h1 {
+    text-align: center;
+}
+
+.fail {
+    gap: 2em;
+}
+
+.fail h1 {
+    margin-top: 0.5em;
+}
+
+.home {
+    cursor: pointer;
+    font-size: 1.1em;
+    height: 7vh;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
+    font-weight: 700;
+    border-radius: 1em;
+    color: var(--whiteTone);
+    background-color: var(--redTone);
+    border: 0px;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+#img_refuse {
+    height: 30vh;
+    width: 100vw;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    min-height: 7vh;
+    border-top: 1.5px solid #C5C5C5;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+/* Outros dispositivos */
+@media only screen and (min-width: 768px) {
+    .status {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        gap: 1em;
+    }
+
+    #img_refuse {
+        height: 70vh;
+    }
+
+    #img_agree {
+        width: 60vw;
+    }
+}

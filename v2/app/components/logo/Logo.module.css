@@ -1,0 +1,66 @@
+/* Initial logo */
+#initial_logo {
+    margin: 20px 0 20px 0;
+}
+  
+#initial_logo img {
+    height: 4vh;
+    padding-bottom: 0.5vh;
+}
+
+#initial_logo {
+    padding: 0.5vh;
+    width: 180px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    align-self: center;
+}
+  
+#initial_logo a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+#initial_logo img {
+    filter: invert(1);
+}
+
+@media only screen and (min-width: 768px) {
+    #initial_logo {
+        margin: 15px 0 15px 0;
+    }
+
+    #initial_logo img {
+        height: 5vh;
+    }
+}
+
+/* Final logo */
+.desktop_logo {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.desktop_logo a {
+    display: flex;
+    gap: 1em;
+}
+
+.desktop_logo a strong {
+    margin-bottom: 15px;
+    align-self: flex-end;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 7em;
+}
+
+.desktop_logo a img {
+    height: 3em;
+    margin-bottom: 5px;
+}
