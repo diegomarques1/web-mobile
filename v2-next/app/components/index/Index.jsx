@@ -1,17 +1,15 @@
 "use client";
 
 import { React } from "react";
-import {useRouter} from "next/navigation";
 
 import "./Index.css";
 import Logo from "../logo/Logo";
 
 export default function Index() {
-    const router = useRouter();
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        router.push("/home");
+        window.location.href = "/home";
     }
 
     return (

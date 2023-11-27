@@ -17,7 +17,7 @@ export default function OngoingRefuse() {
                     <Header />
                     <OngoingResult status="refuse"/>
                 </div>
-                <Footer ver="people" />
+                <Footer text="people" />
             </div>
             <Menu />
         </div>

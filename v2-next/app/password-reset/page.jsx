@@ -1,17 +1,15 @@
 "use client";
 
 import { React } from "react";
-import { useRouter } from "next/navigation";
 
 import "./page.css";
 import Logo from "../components/logo/Logo";
 
 export default function PasswordReset() {
-    const router = useRouter();
-
-    const handleSubmit = (event) => {
+    
+    const handleSubmit = () => {
         event.preventDefault();
-        router.push("/");
+        window.location.href = "/";
     }
 
     return (
