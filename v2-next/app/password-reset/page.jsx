@@ -7,7 +7,7 @@ import Logo from "../components/logo/Logo";
 
 export default function PasswordReset() {
     
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
         event.preventDefault();
         window.location.href = "/";
     }

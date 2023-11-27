@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <div>
             <div id="main">
-                <Header partial={false}/>
+                <Header version="1"/>
                 <section id="feed">
                     <h1>Precisando de carona?</h1>
                     <div id="search_bar">

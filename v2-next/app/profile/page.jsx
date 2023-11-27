@@ -104,7 +104,7 @@ export default function Profile() {
                                     <select name="function" id="function" defaultValue="" onChange={handleChange}>
                                         <option value="">Selecione uma opção</option>
                                         <option value="estudante">Estudante</option>
-                                        <option value="funcionário">Funcionário(a)</option>
+                                        <option value="funcionário(a)">Funcionário(a)</option>
                                         <option value="professor(a)">Professor(a)</option>
                                     </select><br/>
                                     <label htmlFor="function">Campus</label>

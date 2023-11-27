@@ -10,7 +10,7 @@ export default function OngoingOffer() {
     return (
         <div>
             <main>
-                <Header />
+                <Header version="2" path="/ongoing"/>
                 <div className="info_cont">
                     <section id="description">
                         <h1>Informações da carona</h1>
