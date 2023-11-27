@@ -1,16 +1,17 @@
 "use client";
 
 import { React } from "react";
-import "./page.css";
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
+import "../offer.css";
+
+import RequestResult from "../components/request-result/RequestResult";
 import Menu from "../components/menu/Menu";
 
-export default function Page() {
+export default function OfferStatus() {
     
     return (
         <div>
-            
+            <RequestResult type="status"/>
+            <Menu />
         </div>
     );
 }

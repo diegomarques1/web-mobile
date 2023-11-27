@@ -5,7 +5,7 @@ import "../request.css";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import Menu from "../components/menu/Menu";
-import Request from "../components/request/Request";
+import Ride from "../components/ride/Ride";
 
 export default function RequestRide() {
     return (
@@ -16,9 +16,9 @@ export default function RequestRide() {
                     <section id="near">
                         <h1>Caronas próximas de você</h1>
                         <div id="near_rides">
-                            <Request name="Arthur Amaral" function="Estudante" region="Tatuapé" campus="Higienópolis"/>
-                            <Request name="Mariana Souza" function="Estudante" region="Itaquera" campus="Alphaville"/>
-                            <Request name="Francisco Abreu" function="Professor(a)" region="Vila Matilde" campus="Higienópolis"/>
+                            <Ride type="request" name="Arthur Amaral" function="Estudante" region="Tatuapé" campus="Higienópolis"/>
+                            <Ride type="request" name="Mariana Souza" function="Estudante" region="Itaquera" campus="Alphaville"/>
+                            <Ride type="request" name="Francisco Abreu" function="Professor(a)" region="Vila Matilde" campus="Higienópolis"/>
                         </div>
                     </section>
                     <div id="options">
