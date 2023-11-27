@@ -26,7 +26,8 @@ export default function CreateAccount() {
                     <label htmlFor="email">E-mail</label>
                     <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required/><br/>
                     <label htmlFor="cellphone">Celular</label>
-                    <input type="number" id="cellphone" name="cellphone" placeholder="Digite seu número com DDD..." required/><br/>
+                    <input type="text" id="cellphone" name="cellphone" placeholder="Digite seu número com DDD (11 dígitos)..." 
+                    pattern="\d{11}" required/><br/>
                     <label htmlFor="birthdate">Data de nascimento</label>
                     <input type="date" id="birthdate" name="birthdate" required/><br/>
                     <label htmlFor="password">Senha</label>
