@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Header.module.css";
 import Logo from "../logo/Logo";
-import Navbar from "../navbar/NavBar";
+import Navbar from "../navbar/Navbar";
 
 export default function Header({version="0", path="none"}) {
     if (version === "0") {
