@@ -8,6 +8,8 @@ import Header from "../components/header/Header";
 
 export default function OfferConfirm(props) {
     const { searchParams } = props;
+    let date = new Date();
+    let formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -23,6 +25,10 @@ export default function OfferConfirm(props) {
                     <strong><p id="person">{searchParams.from}</p></strong>
                     <form id="offer_form" onSubmit={handleSubmit}>
                         <fieldset>
+                            <label htmlFor="ride_date">Data da carona</label>
+                            <input type="date" id="ride_date" name="ride_date" min={formattedDate} required/><br/>
+                            <label htmlFor="ride_time">Horário da carona</label>
+                            <input type="text" id="ride_time" name="ride_time" required/><br/>
                             <label htmlFor="actual_location">Localização atual</label>
                             <input type="text" id="actual_location" name="actual_location" required/><br/>
                             <label htmlFor="select_campus">Campus de destino</label>

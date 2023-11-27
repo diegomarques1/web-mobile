@@ -18,7 +18,8 @@ export default function OngoingOffer() {
                             <p><strong>Rafael Valente</strong></p>
                             <p>E-mail: rafael@gmail.com</p>
                             <p>Celular: (11) 99999-9999</p>
-                            <p>Localização atual: Rua João, 100</p>
+                            <p>Data: 01/12/2023 - 18:00</p>
+                            <p>Localização atual: Rua Simpatia, 300</p>
                             <p>Região: Mooca</p>
                             <p>Campus: Higienópolis</p>
                             <p>Solicitando carona: <strong>sim</strong></p>

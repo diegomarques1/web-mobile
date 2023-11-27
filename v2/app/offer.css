@@ -134,7 +134,7 @@ header {
     display: none;
 }
 
-button:hover, a:hover, #options, #options_mobile, #options_desktop input {
+button:hover, a:hover, #options, #options_mobile, #options_desktop input, .button_options {
     cursor: pointer;
 }
 

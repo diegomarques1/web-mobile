@@ -21,7 +21,8 @@ export default function RequestInfo(props) {
                             <p><strong>{searchParams.name}</strong></p>
                             <p>E-mail: xyz@gmail.com</p>
                             <p>Celular: (11) 91111-1111</p>
-                            <p>Localização atual: Rua X, 150</p>
+                            <p>Data: 01/12/2023 - 18:00</p>
+                            <p>Localização atual: Rua Simpatia, 400</p>
                             <p>Região: {searchParams.region}</p>
                             <p>Campus: {searchParams.campus}</p>
                             <p>Disponível para carona: <strong>sim</strong></p>

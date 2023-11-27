@@ -6,7 +6,9 @@ import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 
 export default function RequestAsk() {
-
+    let date = new Date();
+    let formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+    
     const handleSubmit = (event) => {
         event.preventDefault();
         window.location.href = "/request-status";
@@ -21,7 +23,7 @@ export default function RequestAsk() {
                     <form id="request_ride" onSubmit={handleSubmit}>
                         <fieldset>
                             <label htmlFor="ride_date">Data da carona</label>
-                            <input type="date" id="ride_date" name="ride_date" required/><br/>
+                            <input type="date" id="ride_date" name="ride_date" min={formattedDate} required/><br/>
                             <label htmlFor="ride_time">Horário da carona</label>
                             <input type="text" id="ride_time" name="ride_time" required/><br/>
                             <label htmlFor="actual_location">Localização atual</label>

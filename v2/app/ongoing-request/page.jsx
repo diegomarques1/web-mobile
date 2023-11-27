@@ -18,7 +18,8 @@ export default function OngoingRequest() {
                             <p><strong>Arthur Amaral</strong></p>
                             <p>E-mail: arthur@gmail.com</p>
                             <p>Celular: (11) 91111-1111</p>
-                            <p>Localização atual: Rua X, 150</p>
+                            <p>Data: 30/11/2023 - 09:00</p>
+                            <p>Localização atual: Rua Heitor Penteado, 774</p>
                             <p>Região: Tatuapé</p>
                             <p>Campus: Higienópolis</p>
                             <p>Disponível para carona: <strong>sim</strong></p>

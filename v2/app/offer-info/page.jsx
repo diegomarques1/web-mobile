@@ -21,7 +21,8 @@ export default function OfferInfo(props) {
                             <p><strong>{searchParams.name}</strong></p>
                             <p>E-mail: zyx@gmail.com</p>
                             <p>Celular: (11) 92222-2222</p>
-                            <p>Localização atual: Rua Y, 581, Apto. 32</p>
+                            <p>Data: 30/11/2023 - 15:00</p>
+                            <p>Localização atual: Rua da Consolação, 500</p>
                             <p>Região: {searchParams.region}</p>
                             <p>Campus: {searchParams.campus}</p>
                             <p>Solicitando carona: <strong>sim</strong></p>

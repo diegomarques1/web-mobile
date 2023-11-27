@@ -133,7 +133,7 @@ header {
 }
 
 /* Botões em geral */
-button:hover, a:hover, #options, #options_mobile, #options_desktop input {
+button:hover, a:hover, #options, #options_mobile, #options_desktop input, .button_options {
     cursor: pointer;
 }
 
