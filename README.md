@@ -7,3 +7,6 @@ v1: HTML/CSS puro
 v2: React com Next
 
 Link da aplicação: https://web-mobile-pink.vercel.app/
+
+No futuro, seria interessante dinamizar todo o aplicativo, além de resolver o problema assíncrono de converter localidades em latitudes e longitudes, para aí sim chamar outro endpoint da API. Por enquanto, tudo bem manual nesse quesito.
+

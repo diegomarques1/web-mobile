@@ -5,6 +5,7 @@ import { React } from "react";
 import "./page.css";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
+import ApiMaps from "../components/api-maps/ApiMaps";
 
 export default function OngoingOffer() {
     return (
@@ -31,7 +32,7 @@ export default function OngoingOffer() {
                         </div>
                     </section>
                     <div id="location">
-                        <img id="map_location" src="../img/location-on-map.png" alt="Imagem de um mapa de São Paulo"/>
+                        <ApiMaps />
                     </div>
                     <div id="options_mobile">
                         <a href="/ongoing-refuse"><button type="button" className="button_options refuse">Recusar</button></a>

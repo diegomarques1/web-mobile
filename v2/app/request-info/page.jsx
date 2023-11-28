@@ -6,6 +6,7 @@ import Link from "next/link";
 import "../request.css";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
+import ApiMaps from "../components/api-maps/ApiMaps";
 
 export default function RequestInfo(props) {
     const { searchParams } = props;
@@ -34,7 +35,7 @@ export default function RequestInfo(props) {
                         </div>
                     </section>
                     <div id="location">
-                        <img id="map_location" src="img/location-on-map.png" alt="Imagem de um mapa de São Paulo"/>
+                        <ApiMaps />
                     </div>
                     <div id="options_mobile">
                         <Link href={`/request-confirm?from=${searchParams.name}`}>
