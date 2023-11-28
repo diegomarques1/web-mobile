@@ -4,6 +4,7 @@ import { React } from "react";
 import "../request.css";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
+import GetRoute from "../components/api-geo/ApiGeo";
 
 export default function RequestConfirm(props) {
     const { searchParams } = props;
@@ -22,6 +23,7 @@ export default function RequestConfirm(props) {
                 <div id="request_cont">
                     <h1>Solicitar carona para:</h1>
                     <strong><p id="person">{searchParams.from}</p></strong>
+                    <strong>Distância esperada: <GetRoute /></strong>
                     <form id="request_ride" onSubmit={handleSubmit}>
                         <fieldset>
                             <label htmlFor="ride_date">Data da carona</label>

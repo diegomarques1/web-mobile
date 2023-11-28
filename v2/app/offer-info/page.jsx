@@ -6,6 +6,7 @@ import "../offer.css";
 
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
+import ApiMaps from "../components/api-maps/ApiMaps";
 
 export default function OfferInfo(props) {
     const { searchParams } = props;
@@ -35,7 +36,7 @@ export default function OfferInfo(props) {
                         </div>
                     </section>
                     <div id="location">
-                        <img id="map_location" src="img/location-on-map.png" alt="Imagem de um mapa de São Paulo"/>
+                        <ApiMaps />
                     </div>
                     <div id="options_mobile">
                         <Link href={`/offer-confirm?from=${searchParams.name}`}>
