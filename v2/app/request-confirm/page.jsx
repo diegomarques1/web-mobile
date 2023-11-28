@@ -23,7 +23,7 @@ export default function RequestConfirm(props) {
                 <div id="request_cont">
                     <h1>Solicitar carona para:</h1>
                     <strong><p id="person">{searchParams.from}</p></strong>
-                    <strong>Distância esperada: <GetRoute /></strong>
+                    <strong><p id="distance">Distância esperada: <GetRoute /></p></strong>
                     <form id="request_ride" onSubmit={handleSubmit}>
                         <fieldset>
                             <label htmlFor="ride_date">Data da carona</label>

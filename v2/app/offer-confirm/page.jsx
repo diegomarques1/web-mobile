@@ -24,7 +24,7 @@ export default function OfferConfirm(props) {
                 <div id="offer_ride">
                     <h1>Oferecer carona para:</h1>
                     <strong><p id="person">{searchParams.from}</p></strong>
-                    <strong>Distância esperada: <GetRoute /></strong>
+                    <strong><p id="distance">Distância esperada: <GetRoute /></p></strong>
                     <form id="offer_form" onSubmit={handleSubmit}>
                         <fieldset>
                             <label htmlFor="ride_date">Data da carona</label>

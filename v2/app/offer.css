@@ -58,8 +58,12 @@ h2 {
     margin-bottom: 0.5em;
 }
 
-#person {
+#person, #distance {
     text-align: center;
+    margin-bottom: 0;
+}
+
+#distance {
     margin-bottom: 1em;
 }
 
